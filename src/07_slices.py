@@ -12,10 +12,15 @@ Use Python's slice syntax to achieve the following:
 a = [2, 4, 1, 7, 9, 6]
 # Output the second element: 4:
 # starts from 0!!!
-print(a[1])
+print(a[1:2][0])
+''' 
+the [0] pulls the element out of the array to give 4
+OR
+print(a[1]) this just returns the array element, [4]
+'''
 
 # Output the second-to-last element: 9
-print(a[4:5])
+print(a[4:5][0])
 # remember the 2nd number, 5, is not included!
 
 # Output the last three elements in the array: [7, 9, 6]
