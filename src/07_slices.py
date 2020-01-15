@@ -10,28 +10,38 @@ Use Python's slice syntax to achieve the following:
 """
 
 a = [2, 4, 1, 7, 9, 6]
-
 # Output the second element: 4:
-print()
+# starts from 0!!!
+print(a[1:2][0])
+''' 
+the [0] pulls the element out of the array to give 4
+OR
+print(a[1]) this just returns the array element, [4]
+'''
 
 # Output the second-to-last element: 9
-print()
+print(a[4:5][0])
+# remember the 2nd number, 5, is not included!
 
 # Output the last three elements in the array: [7, 9, 6]
-print()
+print(a[-3:])
+'''
+or in this case can be
+print(a[3:])
+'''
 
 # Output the two middle elements in the array: [1, 7]
-print()
+print(a[2:4])
 
 # Output every element except the first one: [4, 1, 7, 9, 6]
-print()
+print(a[1:])
 
 # Output every element except the last one: [2, 4, 1, 7, 9]
-print()
+print(a[:5])
 
 # For string s...
 
 s = "Hello, world!"
 
 # Output just the 8th-12th characters: "world"
-print()
+print(s[7:12])
