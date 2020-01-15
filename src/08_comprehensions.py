@@ -32,4 +32,6 @@ print(y)
 x = input("Enter Comma Seperated Numbers").split(',')
 # What do you need between the square brackets to make it work?
 y = [i for i in x if(int(i) % 2 == 0)]
+# y = [FORMATTING (string) COLLECTION(i in x) FILTER (i % 2 == 0)]
+# y = [str(i) for i in x if i % 2 == 0] can convert to string easily!
 print(y)
